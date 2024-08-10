@@ -56,26 +56,16 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>หน้าหลัก</a>
+              <a href="/">หน้าหลัก</a>
             </li>
             <li>
-              <details>
-                <summary>ซื้อขายพระเครื่อง</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <a href="/">ซื้อขายพระเครื่อง</a>
             </li>
             <li>
-              <a>ดูดวง</a>
+              <a href="/duduang">ดูดวง</a>
             </li>
             <li>
-              <a>สีประจำวัน</a>
+              <a href="/day">สีประจำวัน</a>
             </li>
           </ul>
         </div>
