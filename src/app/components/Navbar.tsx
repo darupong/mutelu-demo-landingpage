@@ -49,7 +49,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Image src={Logo} width={50} height={50} alt="logo" />
+          <a href="/">
+            <Image src={Logo} width={50} height={50} alt="logo" />
+          </a>
         </div>
 
         {/* Navbar center */}
