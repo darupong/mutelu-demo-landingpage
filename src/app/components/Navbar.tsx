@@ -1,10 +1,14 @@
 import React from "react";
+import Logo from "../../../public/Logo.jpg";
+import Image from "next/image";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <>
-      <div className="navbar bg-base-300">
-        <div className="navbar-start">
+    <div className="navbar bg-[#FCEAC1]">
+      <div className="container mx-auto flex justify-between items-center px-4">
+        {/* Navbar start */}
+        <div className="navbar-start flex items-center">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -45,16 +49,18 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Mutelu</a>
+          <Image src={Logo} width={50} height={50} alt="logo" />
         </div>
+
+        {/* Navbar center */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>หน้าหลัก</a>
             </li>
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary>ซื้อขายพระเครื่อง</summary>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -66,15 +72,20 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>ดูดวง</a>
+            </li>
+            <li>
+              <a>สีประจำวัน</a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+
+        {/* Navbar end with FaSearch icon */}
+        <div className="navbar-end flex items-center">
+          <FaSearch className="text-black cursor-pointer" size={20} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
